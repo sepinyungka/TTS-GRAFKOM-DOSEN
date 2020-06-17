@@ -3,38 +3,101 @@
 
 void display() {
 	glClear(GL_COLOR_BUFFER_BIT);
-	glColor3f(1.0, 0.0, 0.0);
 
-	glBegin(GL_POLYGON);//pola besar 1
-	glColor3ub(205, 92, 92);
+	glBegin(GL_POLYGON);//pola besar 1 PINK
+	glColor3ub(199, 21, 133);
 	glVertex2f(-100, 0);
 	glVertex2f(0, 145);
 	glVertex2f(100, 0);
 	glVertex2f(0, -145);
 	glEnd();
 
-	glBegin(GL_POLYGON);//pola besar 2
-	glColor3ub(205, 92, 92);
+	glBegin(GL_POLYGON);//pola besar 2 BIRU
+	glColor3ub(0, 255, 255);
 	glVertex2f(0, 150);
 	glVertex2f(-100, 295);
 	glVertex2f(0, 440);
 	glVertex2f(100, 295);
 	glEnd();
 
-	glBegin(GL_POLYGON);//pola besar 3
-	glColor3ub(205, 92, 92);
+	glBegin(GL_POLYGON);//pola besar 3 KUNING
+	glColor3ub(255, 255, 0);
 	glVertex2f(0, -150);
 	glVertex2f(-100, -295);
 	glVertex2f(0, -440);
 	glVertex2f(100, -295);
 	glEnd();
 
-	//glBegin(GL_POLYGON);//pola besar 
+	glBegin(GL_POLYGON);//pola besar kiri HIJAU
+	glColor3ub(0, 255, 0);
+	glVertex2f(120, -290);
+	glVertex2f(220, -145);
+	glVertex2f(120, 0);
+	glVertex2f(20, -145);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar kiri KUNING
+	glColor3ub(255, 255, 0);
+	glVertex2f(120, 5);
+	glVertex2f(220, 150);
+	glVertex2f(120, 295);
+	glVertex2f(20, 150);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar kiri BIRU
+	glColor3ub(199, 21, 133);
+	glVertex2f(120, 300);
+	glVertex2f(220, 445);
+	glVertex2f(120, 590);
+	glVertex2f(20, 445);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar kiri MERAH
+	glColor3ub(205, 92, 92);
+	glVertex2f(120, -295);
+	glVertex2f(20, -440);
+	glVertex2f(120, -585);
+	glVertex2f(220, -440);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar kanan
+	glColor3ub(205, 255, 255);
+	glVertex2f(-120, -290);
+	glVertex2f(-220, -145);
+	glVertex2f(-120, 0);
+	glVertex2f(-20, -145);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar kanan
+	glColor3ub(205, 92, 92);
+	glVertex2f(-120, 5);
+	glVertex2f(-220, 150);
+	glVertex2f(-120, 295);
+	glVertex2f(-20, 150);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar kanan MERAH
+	glColor3ub(255, 255, 255);
+	glVertex2f(-120, -295);
+	glVertex2f(-220, -440);
+	glVertex2f(-120, -585);
+	glVertex2f(-20, -440);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar kanan
+	glColor3ub(255, 255, 255);
+	glVertex2f(-120, 300);
+	glVertex2f(-220, 445);
+	glVertex2f(-120, 590);
+	glVertex2f(-20, 445);
+	glEnd();
+
+	//glBegin(GL_POLYGON);//pola besar kanan
 	//glColor3ub(205, 92, 92);
-	//glVertex2f(120, -290);
-	//glVertex2f(-100, 295);
-	//glVertex2f(0, 440);
-	//glVertex2f(100, 295);
+	//glVertex2f(120, -295);
+	//glVertex2f(20, -440);
+	//glVertex2f(120, -585);
+	//glVertex2f(220, -440);
 	//glEnd();
 
 	//glBegin(GL_POLYGON);//pola besar
@@ -45,42 +108,11 @@ void display() {
 	//glVertex2f(220, 165);
 	//glEnd();
 
-	//glBegin(GL_POLYGON);//pola itam kecil atas
-	//glColor3f(0.0, 0.0, 0.0);
-	//glVertex2f(-10, 0);
-	//glVertex2f(0, 10);
-	//glVertex2f(10, 0);
-	//glVertex2f(0, -10);
-	//glEnd();
-
-	//glBegin(GL_POLYGON); // pola itam kecil kanan 
-	//glColor3f(0.0, 0.0, 0.0);
-	//glVertex2f(5, -10);
-	//glVertex2f(15, -20);
-	//glVertex2f(25, -10);
-	//glVertex2f(15, 0);
-	//glEnd();
-
-	//glBegin(GL_POLYGON); // pola itam kecil kiri 
-	//glColor3f(0.0, 0.0, 0.0);
-	//glVertex2f(-5, -10);
-	//glVertex2f(-15, -20);
-	//glVertex2f(-25, -10);
-	//glVertex2f(-15, 0);
-	//glEnd();
-
-	//glBegin(GL_POLYGON); //pola itam kecil bawah 
-	//glColor3f(0.0, 0.0, 0.0);
-	//glVertex2f(0, -12);
-	//glVertex2f(10, -22);
-	//glVertex2f(0, -32);
-	//glVertex2f(-10, -22);
-	//glEnd();
 	glFlush();
 }
 
 void myinit() {
-	glClearColor(1.0, 1.0, 1.0, 1.0);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	glColor3f(1.0, 0.0, 0.0);
 	glPointSize(2.0);
 	glMatrixMode(GL_PROJECTION);
