@@ -92,21 +92,85 @@ void display() {
 	glVertex2f(-20, 445);
 	glEnd();
 
-	//glBegin(GL_POLYGON);//pola besar kanan
-	//glColor3ub(205, 92, 92);
-	//glVertex2f(120, -295);
-	//glVertex2f(20, -440);
-	//glVertex2f(120, -585);
-	//glVertex2f(220, -440);
-	//glEnd();
+ 	glBegin(GL_POLYGON);//pola besar 2 PINK
+	glColor3ub(199, 21, 133);
+	glVertex2f(140, 0);
+	glVertex2f(240, 145);
+	glVertex2f(340, 0);
+	glVertex2f(240, -145);
+	glEnd();
 
-	//glBegin(GL_POLYGON);//pola besar
-	//glColor3ub(205, 92, 92);
-	//glVertex2f(120, 20);
-	//glVertex2f(20, 165);
-	//glVertex2f(120, 330);
-	//glVertex2f(220, 165);
-	//glEnd();
+	glBegin(GL_POLYGON);//pola besar 2 BIRU
+	glColor3ub(140, 255, 255);
+	glVertex2f(140, 295);
+	glVertex2f(240, 440);
+	glVertex2f(340, 295);
+	glVertex2f(240, 150);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar 2 KUNING
+	glColor3ub(255, 255, 0);
+	glVertex2f(240, -150);
+	glVertex2f(340, -295);
+	glVertex2f(240, -440);
+	glVertex2f(140, -295);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar 3 PINK
+	glColor3ub(199, 21, 133);
+	glVertex2f(-140, 0);
+	glVertex2f(-240, 145);
+	glVertex2f(-340, 0);
+	glVertex2f(-240, -145);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar 3 BIRU
+	glColor3ub(140, 255, 255);
+	glVertex2f(-140, 295);
+	glVertex2f(-240, 440);
+	glVertex2f(-340, 295);
+	glVertex2f(-240, 150);
+	glEnd();
+
+	glBegin(GL_POLYGON);//pola besar 3 KUNING
+	glColor3ub(255, 255, 0);
+	glVertex2f(-240, -150);
+	glVertex2f(-340, -295);
+	glVertex2f(-240, -440);
+	glVertex2f(-140, -295);
+	glEnd();
+
+	glBegin(GL_POLYGON);//galis lurus kanan 
+	glColor3ub(255, 255, 0);
+	glVertex2f(420, 500);
+	glVertex2f(420, -500);
+	glVertex2f(440, -500);
+	glVertex2f(440, 500);
+	glEnd();
+
+	glBegin(GL_POLYGON);//galis lurus kanan 
+	glColor3ub(0, 255, 0);
+	glVertex2f(445, 500);
+	glVertex2f(445, -500);
+	glVertex2f(450, -500);
+	glVertex2f(450 , 500);
+	glEnd();
+
+	glBegin(GL_POLYGON);//galis lurus kanan 
+	glColor3ub(255, 255, 255);
+	glVertex2f(460, 500);
+	glVertex2f(460, -500);
+	glVertex2f(470, -500);
+	glVertex2f(470, 500);
+	glEnd();
+
+	glBegin(GL_POLYGON);//galis lurus kanan 
+	glColor3ub(255, 255, 0);
+	glVertex2f(475, 500);
+	glVertex2f(475, -500);
+	glVertex2f(480, -500);
+	glVertex2f(480, 500);
+	glEnd();
 
 	glFlush();
 }
